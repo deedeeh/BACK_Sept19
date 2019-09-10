@@ -32,6 +32,17 @@
 
       function displayMatches() {
         const matchArr = findMatches(this.value, cities);
+        const html = matchArr
+          .map(location => {
+            return `
+            <li>
+              <span class="name">${location.city}, ${location.state}</span>
+              <span class="population">${location.population}</span>
+            </li>
+          `;
+          })
+          .join("");
+        suggestions.innerHTML = html;
       }
 
       const searchInput = document.querySelector(".search");
