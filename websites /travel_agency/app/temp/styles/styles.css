@@ -475,13 +475,41 @@ img {
   }
 
 .large-hero__title {
+    margin: 0;
     font-weight: 300;
     color: #2f5572;
     font-size: 4.8rem;
   }
 
 .large-hero__subtitle {
+    margin: 0 0 2rem;
     font-weight: 300;
     color: #2f5572;
     font-size: 3.5rem;
+  }
+
+.large-hero__description {
+    margin: 0 auto;
+    font-size: 1.875rem;
+    font-weight: 100;
+    color: #fff;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    max-width: 30rem;
+  }
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.2rem;
+  background-color: #2f5572;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn--orange {
+    background-color: #d59541;
+  }
+
+.btn--large {
+    font-size: 1.25rem;
+    padding: 1rem 1.9rem;
   }
