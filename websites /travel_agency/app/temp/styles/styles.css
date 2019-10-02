@@ -811,3 +811,35 @@ a {
       text-align: left
   }
   }
+
+.testimonial {
+  background-color: rgba(255, 255, 255, .8);
+  padding: 0 1.8125rem 1px 1.8125rem;
+}
+
+.testimonial__photo {
+    margin: 0 auto -80px auto;
+    border: 6px solid rgba(255, 255, 255, .8);
+    border-radius: 50%;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    position: relative; 
+    top: -80px;
+  }
+
+.testimonial__title {
+    color: #2f5572;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+.testimonial__subtitle {
+    color: #d59541;
+    text-align: center;
+    font-weight: 400;
+    margin: .25rem 0 1rem 0;
+    font-size: 0.9375;
+  }
