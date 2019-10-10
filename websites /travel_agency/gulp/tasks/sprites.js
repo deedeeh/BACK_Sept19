@@ -37,4 +37,8 @@ gulp.task('copySpriteCSS', ['createSprite'], () => {
     .pipe(gulp.dest('./app/assets/styles/modules'));
 })
 
-gulp.task('icons', ['beginClean', 'createSprite', 'copySpriteGraphic', 'copySpriteCSS']);
+gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'], () => {
+  return del('./app/temp/sprite');
+})
+
+gulp.task('icons', ['beginClean', 'createSprite', 'copySpriteGraphic', 'copySpriteCSS', 'endClean']);
